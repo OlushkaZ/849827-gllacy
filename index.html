@@ -27,7 +27,7 @@
 			</ul>
 		</nav>
 		<div class="header-addition">
-			<button class="header-addition-search" type="button" name="button">
+			<button class="header-addition-search" type="button" aria-label="поиск">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
 					<image width="17" height="17" overflow="visible" xlink:href="Лупа.png" />
 					<path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
@@ -41,7 +41,6 @@
 						<path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
 					</g>
 				</svg>
-
 				Вход</a>
 			<a class="header-cart">
 				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
@@ -51,7 +50,6 @@
 						<circle cx="15.984" cy="18" r="2" />
 					</g>
 				</svg>
-
 				Пусто</a>
 			<div class="header-addition-contacts">
 				<p class="header-work-time">С 10 до 20, ежедневно</p>
@@ -64,13 +62,11 @@
 		<section class="gallery">
 			<h2 class="visually-hidden">Слайд-бар</h2>
 			<figure class="gallery-content">
-				<a href="#">
 					<img src="img/slide-1.png" width="584" height="1045" alt="Мороженое">
-				</a>
 			</figure>
-			<button class="button gallery-button gallery-button-left" type="button" name="button-left"></button>
-			<button class="button gallery-button gallery-button-middle" type="button" name="button-middle"></button>
-			<button class="button gallery-button gallery-button-right" type="button" name="button-right"></button>
+			<button class="button gallery-button gallery-button-left" type="button" aria-label="первый слайд"></button>
+			<button class="button gallery-button gallery-button-middle" type="button" aria-label="второй слайд"></button>
+			<button class="button gallery-button gallery-button-right" type="button" aria-label="третий слайд"></button>
 			<a href="#">Давайте оба!</a>
 		</section>
 		<section class="promo">
@@ -93,9 +89,7 @@
 			<ul class="populars-list">
 				<li class="catalog-item">
 					<a href="catalog-item.html">
-						<h3>
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
-						</h3>
 						<p class="catalog-item-image">
 							<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						</p>
@@ -107,9 +101,7 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
-						<h3>
 							Сливочно-кофейное с кусочками шоколада
-						</h3>
 						<p class="catalog-item-image">
 							<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 						</p>
@@ -121,9 +113,7 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
-						<h3>
 							Сливочно-клубничное с присыпкой из белого шоколада
-						</h3>
 						<p class="catalog-item-image">
 							<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						</p>
@@ -135,9 +125,7 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
-						<h3>
 							Сливочное крем-брюле с карамельной подливкой
-						</h3>
 						<p class="catalog-item-image">
 							<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 						</p>
@@ -306,7 +294,48 @@
 			</button>
 		</form>
 	</section>
-
+	<section class="modal modal-basket">
+		<h2 class="visually-hidden">Товары в корзине</h2>
+		<form class="basket-form" action="index.html" method="post">
+			<table class="basket-table">
+				<tr>
+					<td>
+						<button class="button basket-item-delete" type="button" name="button">
+							удалить товар
+						</button>
+					</td>
+					<td class="basket-item-image"></td>
+					<td class="basket-item-name">Пломбир с апельсиновым джемом</td>
+					<td class="basket-item-count">1,5 кг</td>
+					<td class="basket-item-multiply">x</td>
+					<td class="basket-item-price">200 руб.</td>
+					<td class="basket-item-cost">300 руб.</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="button basket-item-delete" type="button" name="button">
+							удалить товар
+						</button>
+					</td>
+					<td class="basket-item-image"></td>
+					<td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+					<td class="basket-item-count">1,5 кг</td>
+					<td class="basket-item-multiply">x</td>
+					<td class="basket-item-price">300 руб.</td>
+					<td class="basket-item-cost">450 руб.</td>
+				</tr>
+			</table>
+			<b>
+				Итого: 750 руб.
+			</b>
+			<button class="button" type="submit" name="button">
+				Оформить заказ
+			</button>
+			<button class="visually-hidden modal-close" type="button" name="button">
+				Закрыть
+			</button>
+		</form>
+	</section>
 </body>
 
 </html>
