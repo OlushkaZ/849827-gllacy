@@ -235,28 +235,27 @@
 
 	<section class="modal modal-feedback">
 		<h2>Мы обязательно вам ответим!</h2>
-		<button class="visually-hidden modal-close" type="button" name="button">
+		<button class="visually-hidden modal-close" type="button">
 			Закрыть
 		</button>
 		<form class="feedback-form" action="index.html" method="post">
 			<p>
 				<label class="visually-hidden" for="feedback-name">Ваше имя</label>
-				<input id="feedback-name" type="text" name="name" value="" placeholder="Как вас зовут?">
+				<input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Как вас зовут?">
 			</p>
 			<p>
 				<label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
-				<input id="feedback-email" type="text" name="email" value="" placeholder="Ваша почта для ответа?">
+				<input id="feedback-email" type="text" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
 			</p>
 			<p>
 				<label class="visually-hidden" for="feedback-name">Текст вашего обращения</label>
-				<input id="feedback-name" type="text" name="name" value="" placeholder="Напишите что-нибудь...">
+				<input id="feedback-text" type="text" name="feedback-text" value="" placeholder="Напишите что-нибудь...">
 			</p>
-			<button class="button" type="submit" name="button">
+			<button class="button" type="submit" name="feedback-push">
 				Отправить
 			</button>
 		</form>
 	</section>
-
 	<section class="modal modal-login">
 		<h2 class="visually-hidden">Личный кабинет</h2>
 		<form class="login-form" action="index.html" method="post">
@@ -268,17 +267,16 @@
 				<label class="visually-hidden" for="user-password">Пароль</label>
 				<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<button class="button" type="submit" name="button">
+			<button class="button" type="submit" name="login-push-button">
 				Войти
 			</button>
 			<a href="#">Забыли пароль?</a>
 			<a href="#">новая регистрация</a>
-			<button class="visually-hidden modal-close" type="button" name="button">
+			<button class="visually-hidden modal-close" type="button" name="login-close-button">
 				Закрыть
 			</button>
 		</form>
 	</section>
-
 	<section class="modal modal-search">
 		<h2>Поиск по сайту</h2>
 		<form class="search-form" action="#.html" method="post">
@@ -286,10 +284,10 @@
 				<label class="visually-hidden" for="search">Искать на сайте</label>
 				<input id="search" type="text" name="search" value="" placeholder="Что ищем?">
 			</p>
-			<button class="visually-hidden" type="submit" name="button">
+			<button class="visually-hidden" type="submit" name="search-push-button">
 				Искать
 			</button>
-			<button class="visually-hidden modal-close" type="button" name="button">
+			<button class="visually-hidden modal-close" type="button" name="search-close-button">
 				Закрыть
 			</button>
 		</form>
@@ -300,7 +298,7 @@
 			<table class="basket-table">
 				<tr>
 					<td>
-						<button class="button basket-item-delete" type="button" name="button">
+						<button class="button basket-item-delete" type="button" name="basket-delete-button">
 							удалить товар
 						</button>
 					</td>
@@ -313,7 +311,7 @@
 				</tr>
 				<tr>
 					<td>
-						<button class="button basket-item-delete" type="button" name="button">
+						<button class="button basket-item-delete" type="button" name="basket-delete-button">
 							удалить товар
 						</button>
 					</td>
@@ -328,10 +326,10 @@
 			<b>
 				Итого: 750 руб.
 			</b>
-			<button class="button" type="submit" name="button">
+			<button class="button" type="submit" name="make-order-button">
 				Оформить заказ
 			</button>
-			<button class="visually-hidden modal-close" type="button" name="button">
+			<button class="visually-hidden modal-close" type="button" name="basket-close-button">
 				Закрыть
 			</button>
 		</form>
