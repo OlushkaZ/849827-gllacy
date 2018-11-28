@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+.site-navigation,
+.site-navigation-catalog {
+  list-style: none;
+}
+.site-navigation a,
+.site-navigation-catalog a {
+  color: #ffffff;
+}
+
+.site-navigation-catalog a:hover
+{
+  background-color: #fbded7;
+}
+.site-navigation-catalog a:focus {
+  background-color: #f6b5a5;
+}
+.site-navigation-current{
+background-color: #d07058;
+}
+.gallery a{
+  font-size: 32px;
+  line-height: 44px;
+  color:#ffffff;
+  text-decoration: none;
+}
+.promo-list{
+  list-style: none;
+}
+.promo-list h3{
+  font-size: 35px;
+  line-height: 41px;
+}
+.promo-list p{
+  font-size: 16px;
+}
+.promo-list a{
+  font-size: 18px;
+  line-height: 24px;
+  color:#ffff;
+  text-decoration: none;
+}
+.promo-list li:first-child {
+  color: #ffffff;
+
+  background-color: #ffffff;
+  background-image: url("../img/raspberry.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.populars-list{
+  list-style: none;
+}
+.populars-list b{
+  font-size: 45px;
+  line-height: 45px;
+}
+.populars-list span{
+  font-size: 30px;
+  line-height: 45px;
+}
+.populars-list a{
+  color:#ffffff;
+}
+.features h2{
+  font-size: 24px;
+  line-height: 30px;
+  color:#323232;
+}
+.features-list{
+  list-style: none;
+  color:#323232;
+}
+.blog-news{
+  color:#323232;
+}
+.blog-news a{
+  font-size: 24px;
+  line-height: 30px;
+  color:#323232;
+}
+.subscription{
+  color:#323232;
+}
+.contacts{
+  font-size: 14px;
+  line-height: 20px;
+  color:#323232;
+}
+.contacts b{
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts a{
+  font-size: 18px;
+  line-height: 30px;
+  color:#ffffff;
+  text-decoration: none;
+}
+.catalog-list{
+  list-style: none;
+}
+.pagination-list{
+  list-style: none;
+}
+.footer-additional a{
+
+  font-size: 13px;
+  line-height: 18px;
+  color:#ffffff;
+}
+.footer-copyright-madeIn{
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-copyright-madeIn a{
+  font-size: 12px;
+  line-height: 18px;
+  color:#ffffff;
+}
