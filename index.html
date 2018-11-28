@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +17,7 @@
 			</a>
 			<ul class="site-navigation">
 				<li><a href="catalog.html">Каталог</a>
-					<ul>
+					<ul class="site-navigation-catalog">
 						<li><a href="catalog.html">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
 						<li class="site-navigation-current"><a href="catalog.html">Щербеты</a></li>
@@ -42,7 +45,7 @@
 					</g>
 				</svg>
 				Вход</a>
-			<a class="header-cart">
+			<a class="header-cart" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
 					<g fill="#FFF">
 						<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
@@ -64,15 +67,22 @@
 			<figure class="gallery-content">
 					<img src="img/slide-1.png" width="584" height="1045" alt="Мороженое">
 			</figure>
+<<<<<<< HEAD
 			<button class="button gallery-button gallery-button-left" type="button" aria-label="первый слайд"></button>
 			<button class="button gallery-button gallery-button-middle" type="button" aria-label="второй слайд"></button>
 			<button class="button gallery-button gallery-button-right" type="button" aria-label="третий слайд"></button>
 			<a href="#">Давайте оба!</a>
+=======
+			<button class="button gallery-button gallery-button-left" type="button" name="button-left"></button>
+			<button class="button gallery-button gallery-button-middle" type="button" name="button-middle"></button>
+			<button class="button gallery-button gallery-button-right" type="button" name="button-right"></button>
+			<a class="button" href="#">Давайте оба!</a>
+>>>>>>> lesson5_css
 		</section>
 		<section class="promo">
 			<h2 class="visually-hidden">Промоакции</h2>
 			<ul class="promo-list">
-				<li>
+				<li >
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a class="button" href="promo_malinka.html">Хочу варенье!</a>
@@ -80,7 +90,7 @@
 				<li>
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="button" href="promo_chololat.html">Хочу шоколадки!</a>
+					<a class="button" href="promo_chocolat.html">Хочу шоколадки!</a>
 				</li>
 			</ul>
 		</section>
@@ -165,17 +175,20 @@
 		<section class="subscription">
 			<h2 class="visually-hidden">Подписка на рассылку</h2>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-			<span>Электронная почта</span>
-			<button type="button" name="button">Отправить</button>
+			<p>
+				<label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
+				<input id="subscription-email" type="text" value="" placeholder="Электронная почта">
+			</p>
+			<button class="button subscription-button"  type="button" >Отправить</button>
 		</section>
 		<section class="contacts">
 			<h2 class="visually-hidden">Контактная информация</h2>
-			<div class="contacts">
+			<div class="contacts-text">
 				<p>
 					Адрес главного офиса
 					и офлайн-магазина:
-					<b> ул. Большая Конюшенная</b>
-					19/8, Санкт-Петербург
+					<b> ул. Большая Конюшенная
+					19/8, Санкт-Петербург</b>
 				</p>
 				<p>
 					Для заказов по телефону:
@@ -229,7 +242,7 @@
 			<a class="footer-copyrigh-logo" href="https://htmlacademy.ru">
 				<img src="img/logo-htmlacademy-small.svg" width="100" height="20" alt="Логотип HTML Academy">
 			</a>
-			<p class="footer-copyright-madeIn">Сделано в<a href="https://htmlacademy.ru">HTML Academy</a>© 2017</p>
+			<p class="footer-copyright-madeIn">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
 		</p>
 	</footer>
 
