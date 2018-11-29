@@ -1,4 +1,4 @@
-.body {
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -7,6 +7,18 @@
   font-weight: 400;
   color: #ffffff;
   background-color: #849d8f;
+}
+.button {
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	background-color: #e74a35;
+	border: none;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 15px;
 }
 
 .main-navigation {
@@ -21,11 +33,30 @@
   list-style: none;
 }
 
-.site-navigation a,
+.site-navigation>li>a {
+	font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    border: none;
+    text-decoration: none;
+}
+.site-navigation>li>a:hover,
+.site-navigation>li>a:focus {
+  color: #333333;
+  background-color: #f7f6f3;
+  padding: 10px;
+  border-radius: 15px;
+}
+.site-navigation>li>a:active {
+  color: #323232;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
 .site-navigation-catalog a {
   color: #ffffff;
 }
-
 .site-navigation-catalog a:hover {
   background-color: #fbded7;
 }
@@ -38,25 +69,15 @@
   background-color: #d07058;
 }
 
-.header-addition a {
+.header-addition-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.header-addition a:hover {
+.header-addition-link:hover {
   color: #323232;
 }
 
-.button {
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  background-color: #e74a35;
-  border: none;
-  text-decoration: none;
-}
 
 .button:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -70,7 +91,7 @@
   background-color: rgba(0, 0, 0, 0.07);
 }
 
-.gallery a {
+.gallery-button-get {
   font-size: 32px;
   line-height: 44px;
 }
@@ -79,31 +100,29 @@
   list-style: none;
 }
 
-.promo-list h3 {
+.promo-list-head {
   font-size: 35px;
   line-height: 41px;
 }
 
-.promo-list p {
+.promo-list-text {
   font-size: 16px;
 }
 
-.promo-list a {}
-
-.promo-list li:first-child {
-  color: #ffffff;
-  background-color: #93163e;
-  background-image: url("../img/raspberry.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+.promo-list .promo-item{
+	color: #ffffff;
+	background-position: 0 0;
+	background-repeat: repeat;
 }
 
-.promo-list li:last-child {
-  color: #ffffff;
+.promo-list .promo-item:first-child {
+  background-color: #93163e;
+  background-image: url("../img/raspberry.jpg");
+}
+
+.promo-list .promo-item:last-child {
   background-color: #2e1002;
   background-image: url("../img/chocolate.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
 }
 
 .populars-list,
@@ -111,7 +130,7 @@
   list-style: none;
 }
 
-.populars-list b,
+.populars-list-price,
 .catalog-list b {
   font-size: 45px;
   line-height: 45px;
@@ -123,12 +142,12 @@
   line-height: 45px;
 }
 
-.populars-list a,
+.populars-list-item,
 .catalog-list a {
   color: #ffffff;
 }
 
-.features h2 {
+.features-header {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -136,7 +155,6 @@
 
 .features-list {
   list-style: none;
-  color: #323232;
 }
 
 .features {
@@ -151,7 +169,7 @@
   color: #323232;
 }
 
-.blog-news a {
+.blog-news-link{
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -168,11 +186,13 @@
 .subscription {
   color: #323232;
   background-color: #f8f7f4;
-  background-image: url("../img/post-back.jpg");
+  background-image: url("../img/post-back.svg");
   background-position: 0 0;
   background-repeat: repeat;
 }
-
+.subscription p{
+	color: #5a5a5a;
+}
 .subscription input {
   font: inherit;
   border-radius: 5px;
@@ -181,23 +201,14 @@
 }
 
 .subscription input:hover {
-  font: inherit;
-  border-radius: 5px;
-  background-color: #ffffff;
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .subscription input:focus {
-  font: inherit;
-  border-radius: 5px;
-  background-color: #ffffff;
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 .subscription input:active {
-  font: inherit;
-  border-radius: 5px;
-  background-color: #ffffff;
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -212,7 +223,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-  background-color: #ffffff;
 }
 
 .contacts-text b {
@@ -220,10 +230,12 @@
   line-height: 24px;
 }
 
-.contacts-text a {
+.contacts-button {
   text-decoration: none;
 }
-
+.breadcrumbs{
+  text-decoration: none;
+}
 .breadcrumbs,
 .breadcrumbs a {
   font-size: 14px;
@@ -241,10 +253,7 @@
   line-height: 41px;
 }
 
-.catalog-list {
-  list-style: none;
-}
-
+.catalog-list,
 .pagination-list {
   list-style: none;
 }
