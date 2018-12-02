@@ -1,20 +1,23 @@
+* {
+  outline: 1px solid yellow
+}
+
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  padding-top: 9px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
   background-color: #849d8f;
-  width: 1200px;
 }
 
 .container {
-  width: 1146px;
+  box-sizing: border-box;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 27px;
 }
 
 .visually-hidden {
@@ -52,6 +55,7 @@ body {
 
 .main-header {
   display: flex;
+  margin-top: 9px;
 }
 
 .main-navigation {
@@ -72,9 +76,10 @@ body {
 
 .site-navigation-catalog {
   list-style: none;
+  display: none;
 }
 
-.site-navigation>li>a {
+.site-navigation-link-level1 {
   display: block;
   margin-left: 25px;
   margin-top: 23px;
@@ -86,29 +91,30 @@ body {
   text-decoration: none;
 }
 
-.site-navigation>li>a:hover,
-.site-navigation>li>a:focus {
+.site-navigation-link-level1:hover,
+.site-navigation-link-level1:focus {
+  display: block;
   color: #333333;
   background-color: #f7f6f3;
   padding: 10px;
   border-radius: 15px;
 }
 
-.site-navigation>li>a:active {
+.site-navigation-link-level1:active {
   color: #323232;
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
 }
 
-.site-navigation-catalog a {
+.site-navigation-link-level2 {
   color: #ffffff;
 }
 
-.site-navigation-catalog a:hover {
+.site-navigation-link-level2:hover {
   background-color: #fbded7;
 }
 
-.site-navigation-catalog a:focus {
+.site-navigation-link-level2:focus {
   background-color: #f6b5a5;
 }
 
@@ -140,10 +146,12 @@ body {
 
 .gallery-content {
   margin: 0 auto;
-  margin-top: -115px;
+  /*margin-top: -115px;*/
   margin-bottom: -277px;
   width: 1045px;
   height: 881px;
+  position: relative;
+  bottom: 115px;
 }
 
 .gallery-buttons {
@@ -210,6 +218,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
@@ -229,6 +238,12 @@ body {
 .populars-list-item,
 .catalog-list a {
   color: #ffffff;
+}
+
+.catalog-item-name {
+  margin: 0;
+  padding: 0;
+  min-height: 78px;
 }
 
 .catalog-item-price,
@@ -360,7 +375,10 @@ body {
 }
 
 .breadcrumbs {
-  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .breadcrumbs,
@@ -382,6 +400,10 @@ body {
 
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-footer {
@@ -425,6 +447,11 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.page-title {
+  margin: 0;
+  padding-top: 4px;
 }
 
 .modal {

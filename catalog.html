@@ -10,15 +10,23 @@
 </head>
 
 <body background-color="black">
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.svg" width="154" height="64" alt="Логотип «GllacyShop»">
 			</a>
 			<ul class="site-navigation">
-				<li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-				<li><a href="deliveryAndPay.html">Доставка и оплата</a></li>
-				<li><a href="aboutCompany.html">О Компании</a></li>
+				<li><a class="site-navigation-link-level1" href="catalog.html">Каталог</a>
+					<ul class="site-navigation-catalog">
+						<li><a class="site-navigation-link-level2" href="catalog.html">Новинки</a></li>
+						<li><a class="site-navigation-link-level2" href="catalog.html">Сливочное</a></li>
+						<li class="site-navigation-link-level2 site-navigation-current"><a href="catalog.html">Щербеты</a></li>
+						<li><a class="site-navigation-link-level2" href="catalog.html">Фруктовый лед</a></li>
+						<li><a class="site-navigation-link-level2" href="catalog.html">Мелорин</a></li>
+					</ul>
+				</li>
+				<li><a class="site-navigation-link-level1" href="deliveryAndPay.html">Доставка и оплата</a></li>
+				<li><a class="site-navigation-link-level1" href="aboutCompany.html">О Компании</a></li>
 			</ul>
 		</nav>
 		<div class="header-addition">
@@ -28,7 +36,7 @@
 					<path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
 				</svg>
 			</button>
-			<a class="login-link" href="#">
+			<a class="header-addition-link login-link" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
 					<image width="21" height="19" overflow="visible" xlink:href="Вход.png" />
 					<g fill="#FFF">
@@ -37,7 +45,7 @@
 					</g>
 				</svg>
 				Вход</a>
-			<a class="header-cart">
+			<a class="header-addition-link header-cart" href="#" aria-label="корзина">
 				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
 					<g fill="#FFF">
 						<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
@@ -68,7 +76,9 @@
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						</p>
@@ -80,7 +90,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочно-кофейное с кусочками шоколада
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 						</p>
@@ -92,7 +104,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочно-клубничное с присыпкой из белого шоколада
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						</p>
@@ -104,7 +118,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное крем-брюле с карамельной подливкой
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 						</p>
@@ -116,7 +132,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с брусничным джемом
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
 						</p>
@@ -128,7 +146,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочно-черничное с цельными ягодами брусники
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами брусники">
 						</p>
@@ -140,7 +160,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочно-лимонное с карамельной присыпкой
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 						</p>
@@ -152,7 +174,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с шоколадной стружкой
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 						</p>
@@ -164,7 +188,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочно-ванильное с кусочками шоколада
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 						</p>
@@ -176,7 +202,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с ментоловым сиропом
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
 						</p>
@@ -188,7 +216,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с кусочками черного шоколада
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 						</p>
@@ -200,7 +230,9 @@
 				</li>
 				<li class="catalog-item">
 					<a href="catalog-item.html">
+						<p class="catalog-item-name">
 							Сливочное с мятным сиропом
+						</p>
 						<p class="catalog-item-image">
 							<img src="img/product-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
 						</p>
@@ -222,7 +254,7 @@
 			</ul>
 		</section>
 	</main>
-	<footer class="main-footer">
+	<footer class="main-footer container">
 		<div class="footer-social">
 			<a class="social-button" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -265,7 +297,7 @@
 			<a class="footer-copyrigh-logo" href="https://htmlacademy.ru">
 				<img src="img/logo-htmlacademy-small.svg" width="100" height="20" alt="Логотип HTML Academy">
 			</a>
-			<p class="footer-copyright-madeIn">Сделано в<a href="https://htmlacademy.ru">HTML Academy</a>© 2017</p>
+			<span class="footer-copyright-madeIn">Сделано в </span><a href="https://htmlacademy.ru">HTML Academy</a><span> © 2017</span>
 		</p>
 	</footer>
 	<section class="modal modal-feedback">
@@ -286,7 +318,7 @@
 				<label class="visually-hidden" for="feedback-name">Текст вашего обращения</label>
 				<input id="feedback-text" type="text" value="" placeholder="Напишите что-нибудь...">
 			</p>
-			<button class="button" type="submit" >
+			<button class="button" type="submit">
 				Отправить
 			</button>
 		</form>
@@ -300,14 +332,14 @@
 			</p>
 			<p>
 				<label class="visually-hidden" for="user-password">Пароль</label>
-				<input class="login-icon-password" id="user-password" type="password"  placeholder="Пароль">
+				<input class="login-icon-password" id="user-password" type="password" placeholder="Пароль">
 			</p>
-			<button class="button" type="submit" >
+			<button class="button" type="submit">
 				Войти
 			</button>
 			<a href="#">Забыли пароль?</a>
 			<a href="#">новая регистрация</a>
-			<button class="visually-hidden modal-close" type="button" >
+			<button class="visually-hidden modal-close" type="button">
 				Закрыть
 			</button>
 		</form>
@@ -319,10 +351,10 @@
 				<label class="visually-hidden" for="search">Искать на сайте</label>
 				<input id="search" type="text" value="" placeholder="Что ищем?">
 			</p>
-			<button class="visually-hidden" type="submit" >
+			<button class="visually-hidden" type="submit">
 				Искать
 			</button>
-			<button class="visually-hidden modal-close" type="button" >
+			<button class="visually-hidden modal-close" type="button">
 				Закрыть
 			</button>
 		</form>
@@ -333,7 +365,7 @@
 			<table class="basket-table">
 				<tr>
 					<td>
-						<button class="button basket-item-delete" type="button" >
+						<button class="button basket-item-delete" type="button">
 							удалить товар
 						</button>
 					</td>
@@ -361,10 +393,10 @@
 			<b>
 				Итого: 750 руб.
 			</b>
-			<button class="button" type="submit" >
+			<button class="button" type="submit">
 				Оформить заказ
 			</button>
-			<button class="visually-hidden modal-close" type="button" >
+			<button class="visually-hidden modal-close" type="button">
 				Закрыть
 			</button>
 		</form>
