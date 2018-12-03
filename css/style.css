@@ -63,7 +63,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #849d8f;
+  background-color: transparent;
 }
 
 .site-navigation {
@@ -146,17 +146,17 @@ body {
 
 .gallery-content {
   margin: 0 auto;
-  /*margin-top: -115px;*/
-  margin-bottom: -277px;
+margin-bottom: -392px;
   width: 1045px;
   height: 881px;
   position: relative;
   bottom: 115px;
+  z-index: -1;
 }
 
 .gallery-buttons {
   position: relative;
-  bottom: 58px;
+  bottom: 60px;
   left: 50px;
 }
 
