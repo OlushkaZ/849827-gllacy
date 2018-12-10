@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
 
 .header-addition-button-color {
   fill: #ffffff;
-  stroke: #ffffff;
+  /*stroke: #ffffff;*/
 }
 
 .header-addition-link-svg {
@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden {
 .login-link:hover .header-addition-button-color,
 .header-addition-search:hover .header-addition-button-color{
     fill: #323232;
-    stroke: #323232;
+    /*stroke: #323232;*/
 }
 .header-cart-empty::before {
     content: "";
