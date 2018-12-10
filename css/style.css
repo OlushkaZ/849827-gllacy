@@ -210,6 +210,7 @@ input[type="radio"].visually-hidden {
 
 .header-addition-link {
   display: inline-block;
+  margin-right: 10px;
   padding-left: 43px;
   padding-right: 18px;
   padding-top: 5px;
@@ -222,11 +223,15 @@ input[type="radio"].visually-hidden {
   position: relative;
   vertical-align: bottom;
 }
-
-.login-link {
-  margin-right: 10px;
+.header-addition-button-color{
+  fill:#ffffff;
 }
-
+.header-addition-link:hover .header-addition-button-color{
+    fill:#323232;
+}
+.header-addition-search:hover .header-addition-button-color{
+    fill:#323232;
+}
 .header-cart::before {
   content: "";
   position: absolute;
@@ -802,7 +807,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -1px;
   left: -1px;
-  opacity: 80%;
 }
 
 .footer-additional {
