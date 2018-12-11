@@ -1,7 +1,3 @@
-{
-  outline: 1px solid yellow
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -48,7 +44,6 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   background-color: #e74a35;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #ca3824, #f26843);
@@ -89,6 +84,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-left: 9px;
   margin-top: 14px;
@@ -98,16 +94,14 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-level1 {
   position: relative;
-
+  padding-bottom: 6px;
 }
 
 .site-navigation-link-level1 {
-    display: block;
-    padding: 7px 14px;
-    font-size: 16px;
+  display: block;
+  padding: 7px 14px;
   text-align: center;
   color: #ffffff;
-  /*vertical-align: middle;*/
   border: none;
   text-decoration: none;
   border-radius: 15px;
@@ -117,7 +111,6 @@ input[type="radio"].visually-hidden {
 .site-navigation-link-level1:focus {
   color: #333333;
   background-color: #f7f6f3;
-
   font-weight: 700;
 }
 
@@ -140,8 +133,14 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.site-navigation-level1:hover .site-navigation-link-level1 {
+  color: #333333;
+  background-color: #f7f6f3;
+  font-weight: 700;
 }
 
 .site-navigation-level1:hover .site-navigation-catalog {
@@ -159,6 +158,10 @@ input[type="radio"].visually-hidden {
   padding-right: 15px;
   color: #323232;
   text-decoration: none;
+}
+
+li:last-child .site-navigation-link-level2 {
+  padding-bottom: 15px;
 }
 
 .site-navigation-level2::after {
@@ -227,56 +230,56 @@ input[type="radio"].visually-hidden {
 
 .header-addition-button-color {
   fill: #ffffff;
-  /*stroke: #ffffff;*/
 }
 
 .header-addition-link-svg {
-    position: absolute;
-    top: 6px;
-    left: 15px;
+  position: absolute;
+  top: 6px;
+  left: 15px;
 }
 
 .login-link {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
 .login-link:hover {
-    color: #323232;
-    background-color: #f8f7f4;
+  color: #323232;
+  background-color: #f8f7f4;
 }
 
 .login-link:hover .header-addition-button-color,
-.header-addition-search:hover .header-addition-button-color{
-    fill: #323232;
-    /*stroke: #323232;*/
+.header-addition-search:hover .header-addition-button-color {
+  fill: #323232;
 }
+
 .header-cart-empty::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 15px;
-    width: 21px;
-    height: 20px;
-    background-image: url("../img/basket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-.header-cart-full{
-    color: #323232;
-    background-color: #f8f7f4;
+
+.header-cart-full {
+  color: #323232;
+  background-color: #f8f7f4;
 }
+
 .header-cart-full::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 15px;
-    width: 21px;
-    height: 20px;
-    background-image: url("../img/basket-red.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-
-
 
 .header-work-time {
   font-size: 14px;
@@ -298,7 +301,7 @@ input[type="radio"].visually-hidden {
 
 .gallery-content {
   margin: 0 auto;
-  margin-bottom: -400px;
+  margin-bottom: -418px;
   width: 1045px;
   height: 881px;
   position: relative;
@@ -315,6 +318,9 @@ input[type="radio"].visually-hidden {
 .gallery-button-get {
   font-size: 32px;
   line-height: 44px;
+  border-radius: 30px;
+  padding-left: 41px;
+  padding-right: 41px;
 }
 
 .promo {
@@ -372,10 +378,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 26px;
   right: 23px;
-}
-
-.populars {
-  /*margin-bottom: */
 }
 
 .populars-list,
@@ -610,26 +612,32 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   width: 549px;
   margin: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 30px;
+  padding: 29px 21px;
   border-radius: 15px;
-  position: relative;
 }
 
 .subscription-text {
   margin: 0;
   padding: 0;
-  padding-bottom: 85px;
   color: #5a5a5a;
+  min-height: 101px;
+}
+
+.subscription-form-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.subscription-label-input {
+  margin: 0;
+  padding: 0;
 }
 
 .subscription-input {
-  width: 366px;
-  height: 40px;
-  position: absolute;
-  left: 21px;
-  bottom: 36px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 44px;
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -648,9 +656,8 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription-button {
-  position: absolute;
-  right: 19px;
-  bottom: 39px;
+  padding-right: 16px;
+  margin-bottom: 3px;
 }
 
 .contacts {
@@ -714,7 +721,6 @@ input[type="radio"].visually-hidden {
 .contacts-text-address-bold {
   font-size: 18px;
   line-height: 24px;
-  /*margin-top: 3px;*/
   margin-bottom: 18px;
   display: block;
 }
@@ -877,11 +883,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.8;
 }
 
-.social-button-color{
+.social-button-color {
   fill: #ffffff;
 }
 
-.social-button:hover{
+.social-button:hover {
   opacity: 1;
 }
 

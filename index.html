@@ -62,7 +62,7 @@
 				<button class="gallery-button gallery-button-left" type="button" aria-label="первый слайд"></button>
 				<button class="gallery-button gallery-button-middle" type="button" aria-label="второй слайд"></button>
 				<button class="gallery-button gallery-button-right" type="button" aria-label="третий слайд"></button>
-				<a class="gallery-button-get" class="button" href="#">Давайте оба!</a>
+				<a class="gallery-button-get button" href="#">Давайте оба!</a>
 			</div>
 		</section>
 		<section class="promo">
@@ -159,11 +159,15 @@
 				<div class="subscription-wrap">
 					<h2 class="visually-hidden">Подписка на рассылку</h2>
 					<p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<p>
-						<label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
-						<input class="subscription-input" id="subscription-email" type="text" value="" placeholder="Электронная почта">
-					</p>
-					<button class="button subscription-button" type="button">Отправить</button>
+					<form class="subscription-form" action="index.html" method="post">
+						<div class="subscription-form-wrap">
+							<p class="subscription-label-input">
+								<label class="visually-hidden" for="subscription-email">Ваша электронная почта</label>
+								<input class="subscription-input" id="subscription-email" type="text" value="" placeholder="Электронная почта">
+							</p>
+							<button class="button subscription-button" type="submit">Отправить</button>
+						</div>
+					</form>
 				</div>
 			</section>
 		</div>
