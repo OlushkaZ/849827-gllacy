@@ -390,18 +390,6 @@ li:last-child .site-navigation-link-level2 {
   list-style: none;
 }
 
-.populars-list-price,
-.catalog-list b {
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.populars-list span,
-.catalog-list span {
-  font-size: 30px;
-  line-height: 45px;
-}
-
 .populars-list-item,
 .catalog-list-item {
   color: #ffffff;
@@ -409,7 +397,7 @@ li:last-child .site-navigation-link-level2 {
   flex-direction: column-reverse;
 }
 
-.populars-list-item::before {
+.populars-list-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -421,19 +409,36 @@ li:last-child .site-navigation-link-level2 {
   background-position: 0 0;
 }
 
+.populars-list-item:hover::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -13px;
+  width: 293px;
+  height: calc(100% + 90px);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .catalog-list-item:hover::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -7px;
   left: -13px;
   width: 293px;
-  height: 380px;
+  height: calc(100% + 90px);
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
-  z-index: 2;
 }
 
-.catalog-list-item:hover+.catalog-list-button,
-.catalog-list-button:hover {
+.catalog-list-item:hover,
+.popular-list-item:hover {
+  position: relative;
+  z-index: 1;
+}
+
+.catalog-list-item:hover .catalog-list-button,
+.populars-list-item:hover .catalog-list-button {
   display: block;
 }
 
@@ -442,8 +447,9 @@ li:last-child .site-navigation-link-level2 {
   box-sizing: border-box;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
-  width: 200px;
+  transform: translateX(-50%);
+  min-width: 200px;
+  bottom: -60px;
   padding-left: 15px;
   padding-right: 15px;
   z-index: 3;
@@ -452,16 +458,14 @@ li:last-child .site-navigation-link-level2 {
 .catalog-item {
   width: 267px;
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 47px;
 }
 
 .catalog-item-name {
-  margin: 0;
-  padding: 0;
-  padding-top: 13px;
   text-align: center;
-  box-sizing: border-box;
-  min-height: 53px;
+  z-index: 0;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .catalog-item-price,
@@ -471,9 +475,16 @@ li:last-child .site-navigation-link-level2 {
 }
 
 .catalog-item-price {
+  font-size: 30px;
+  line-height: 45px;
   position: absolute;
-  top: 209px;
+  top: 208px;
   z-index: 1;
+}
+
+.populars-list-price {
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .catalog-item-image {
@@ -788,7 +799,7 @@ li:last-child .site-navigation-link-level2 {
 .pagination-list {
   list-style: none;
   margin: 0;
-  margin-top: 44px;
+  margin-top: 42px;
   padding: 0;
   display: flex;
   justify-content: flex-end;
