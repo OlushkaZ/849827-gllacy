@@ -239,24 +239,24 @@
 	</footer>
 
 	<section class="modal modal-feedback">
-		<h2>Мы обязательно вам ответим!</h2>
-		<button class="visually-hidden modal-close" type="button">
+		<h2 class="modal-caption">Мы обязательно вам ответим!</h2>
+		<button class="modal-close" type="button">
 			Закрыть
 		</button>
 		<form class="feedback-form" action="index.html" method="post">
-			<p>
+			<p class="feedback-form-wrap">
 				<label class="visually-hidden" for="feedback-name">Ваше имя</label>
-				<input id="feedback-name" type="text" value="" placeholder="Как вас зовут?">
+				<input class="feedback-form-input" id="feedback-name" type="text" value="" placeholder="Как вас зовут?">
 			</p>
-			<p>
+			<p class="feedback-form-wrap">
 				<label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
-				<input id="feedback-email" type="text" value="" placeholder="Ваша почта для ответа?">
+				<input class="feedback-form-input" id="feedback-email" type="text" value="" placeholder="Ваша почта для ответа?">
 			</p>
-			<p>
+			<p class="feedback-form-wrap">
 				<label class="visually-hidden" for="feedback-name">Текст вашего обращения</label>
-				<input id="feedback-text" type="text" value="" placeholder="Напишите что-нибудь...">
+<textarea class="feedback-form-textarea" id="feedback-text" rows="5" >Напишите что-нибудь...</textarea>
 			</p>
-			<button class="button" type="submit">
+			<button class="button feedback-button" type="submit">
 				Отправить
 			</button>
 		</form>
@@ -264,35 +264,39 @@
 	<section class="modal modal-login">
 		<h2 class="visually-hidden">Личный кабинет</h2>
 		<form class="login-form" action="index.html" method="post">
-			<p>
+			<p class="login-form-wrap">
 				<label class="visually-hidden" for="user-login">Логин</label>
-				<input class="login-icon-user" id="user-login" type="text" placeholder="Электронная почта">
+				<input class="login-form-input" id="user-login" type="text" placeholder="Электронная почта">
 			</p>
-			<p>
+			<p class="login-form-wrap">
 				<label class="visually-hidden" for="user-password">Пароль</label>
-				<input class="login-icon-password" id="user-password" type="password" placeholder="Пароль">
+				<input class="login-form-input" id="user-password" type="password" placeholder="Пароль">
 			</p>
-			<button class="button" type="submit">
-				Войти
-			</button>
-			<a href="#">Забыли пароль?</a>
-			<a href="#">новая регистрация</a>
-			<button class="visually-hidden modal-close" type="button">
+			<div class="login-elements-wrap">
+				<button class="button login-button" type="submit">
+					Войти
+				</button>
+				<div class="login-restores-wrap">
+					<a class="restore" href="#">Забыли пароль?</a>
+					<a class="restore" href="#">новая регистрация</a>
+				</div>
+			</div>
+			<button class="visually-hidden" type="button">
 				Закрыть
 			</button>
 		</form>
 	</section>
 	<section class="modal modal-search">
-		<h2>Поиск по сайту</h2>
+		<h2 class="visually-hidden">Поиск по сайту</h2>
 		<form class="search-form" action="#.html" method="post">
-			<p>
+			<p class="search-form-wrap">
 				<label class="visually-hidden" for="search">Искать на сайте</label>
-				<input id="search" type="text" value="" placeholder="Что ищем?">
+				<input class="search-form-input" id="search" type="text" value="" placeholder="Что ищем?">
 			</p>
 			<button class="visually-hidden" type="submit">
 				Искать
 			</button>
-			<button class="visually-hidden modal-close" type="button">
+			<button class="visually-hidden" type="button">
 				Закрыть
 			</button>
 		</form>
@@ -334,7 +338,7 @@
 			<button class="button" type="submit">
 				Оформить заказ
 			</button>
-			<button class="visually-hidden modal-close" type="button">
+			<button class="visually-hidden" type="button">
 				Закрыть
 			</button>
 		</form>
