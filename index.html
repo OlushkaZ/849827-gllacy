@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
+	<!--link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css"-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -12,21 +13,19 @@
 <body>
 	<header class="main-header container">
 		<nav class="main-navigation">
-			<a class="main-header-logo" href="index.html">
-				<img src="img/logo.svg" width="154" height="64" alt="Логотип «GllacyShop»">
-			</a>
+			<img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип «GllacyShop»">
 			<ul class="site-navigation">
-				<li class="site-navigation-level1"><a class="site-navigation-link-level1" href="catalog.html">Каталог</a>
+				<li class="site-navigation-level1"><a class="site-navigation-link-level1" href="#">Каталог</a>
 					<ul class="site-navigation-catalog">
-						<li class="site-navigation-level2"><a class="site-navigation-link-level2" href="catalog.html">Новинки</a></li>
+						<li class="site-navigation-level2"><a class="site-navigation-link-level2" href="#">Новинки</a></li>
 						<li><a class="site-navigation-link-level2" href="catalog.html">Сливочное</a></li>
-						<li><a class="site-navigation-link-level2" href="catalog.html">Щербеты</a></li>
-						<li><a class="site-navigation-link-level2" href="catalog.html">Фруктовый лед</a></li>
-						<li><a class="site-navigation-link-level2" href="catalog.html">Мелорин</a></li>
+						<li><a class="site-navigation-link-level2" href="#">Щербеты</a></li>
+						<li><a class="site-navigation-link-level2" href="#">Фруктовый лед</a></li>
+						<li><a class="site-navigation-link-level2" href="#">Мелорин</a></li>
 					</ul>
 				</li>
-				<li><a class="site-navigation-link-level1" href="deliveryAndPay.html">Доставка и оплата</a></li>
-				<li><a class="site-navigation-link-level1" href="aboutCompany.html">О Компании</a></li>
+				<li><a class="site-navigation-link-level1" href="#">Доставка и оплата</a></li>
+				<li><a class="site-navigation-link-level1" href="#">О Компании</a></li>
 			</ul>
 		</nav>
 		<div class="header-addition">
@@ -49,13 +48,87 @@
 				<p class="header-work-time">С 10 до 20, ежедневно</p>
 				<b class="header-phone-number">8 812 450-25-25</b>
 			</div>
+			<section class="modal modal-search">
+				<div class="modal-search-wrap">
+					<h2 class="visually-hidden">Поиск по сайту</h2>
+					<form class="search-form" action="#.html" method="post">
+						<p class="search-form-wrap">
+							<label class="visually-hidden" for="search">Искать на сайте</label>
+							<input class="search-form-input" id="search" type="text" value="" placeholder="Что ищем?">
+						</p>
+						<button class="visually-hidden" type="submit">
+							Искать
+						</button>
+						<button class="visually-hidden" type="button">
+							Закрыть
+						</button>
+					</form>
+				</div>
+			</section>
+			<section class="modal modal-login">
+				<div class="modal-login-wrap">
+					<h2 class="visually-hidden">Личный кабинет</h2>
+					<form class="login-form" action="index.html" method="post">
+						<p class="login-form-wrap">
+							<label class="visually-hidden" for="user-login">Логин</label>
+							<input class="login-form-input" id="user-login" type="text" placeholder="Электронная почта">
+						</p>
+						<p class="login-form-wrap">
+							<label class="visually-hidden" for="user-password">Пароль</label>
+							<input class="login-form-input" id="user-password" type="password" placeholder="Пароль">
+						</p>
+						<div class="login-elements-wrap">
+							<button class="button login-button" type="submit">
+								Войти
+							</button>
+							<div class="login-restores-wrap">
+								<a class="restore" href="#">Забыли пароль?</a>
+								<a class="restore" href="#">новая регистрация</a>
+							</div>
+						</div>
+						<button class="visually-hidden" type="button">
+							Закрыть
+						</button>
+					</form>
+				</div>
+			</section>
 		</div>
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden page-title">GllacyShop</h1>
-		<section class="gallery">
+		<section class="gallery-section">
 			<h2 class="visually-hidden">Слайд-бар</h2>
-			<div class="gallery-content">
+			<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+			<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+			<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+			<div class="gallery-wrapper">
+				<div class="gallery-controls">
+					<label for="product-1">Первый</label>
+					<label for="product-2">Второй</label>
+					<label for="product-3">Третий</label>
+				</div>
+				<ul class="gallery-list">
+					<li class="gallery" id="slide1">
+						<h3 class="gallery-title">
+							Крем-брюле и пломбир с малиновым джемом
+						</h3>
+						<a class="gallery-button-get button" href="#">Давайте оба!</a>
+					</li>
+					<li class="gallery" id="slide2">
+						<h3 class="gallery-title">
+							Шоколадный пломбир и лимонный сорбет
+						</h3>
+						<a class="gallery-button-get button" href="#">Давайте оба!</a>
+					</li>
+					<li class="gallery" id="slide3">
+						<h3 class="gallery-title">
+							Пломбир с помадкой и клубничный щербет
+						</h3>
+						<a class="gallery-button-get button" href="#">Давайте оба!</a>
+					</li>
+				</ul>
+			</div>
+			<!--div class="gallery-content">
 				<img src="img/slide-1.png" width="1045" height="881" alt="Мороженое">
 			</div>
 			<div class="gallery-buttons">
@@ -63,7 +136,7 @@
 				<button class="gallery-button gallery-button-middle" type="button" aria-label="второй слайд"></button>
 				<button class="gallery-button gallery-button-right" type="button" aria-label="третий слайд"></button>
 				<a class="gallery-button-get button" href="#">Давайте оба!</a>
-			</div>
+			</div-->
 		</section>
 		<section class="promo">
 			<h2 class="visually-hidden">Промоакции</h2>
@@ -176,6 +249,7 @@
 			</section>
 		</div>
 		<section class="contacts">
+			<iframe class="contacts-iframe" src="https://yandex.ru/map-widget/v1/-/CBFXQWXH0D" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
 			<h2 class="visually-hidden">Контактная информация</h2>
 			<div class="contacts-text">
 				<p class="contacts-text-address">Адрес главного офиса</p>
@@ -227,12 +301,12 @@
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<a class="footer-copyrigh-logo" href="https://htmlacademy.ru">
+			<a class="footer-copyrigh-logo" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
 			</a>
 			<p class="footer-copyright-wrapper">
 				<span class="footer-copyright-madeIn">Сделано в </span>
-				<a class="footer-copyright-madeIn-link" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="footer-copyright-madeIn-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 				<span class="footer-copyright-madeIn"> ©2017</span>
 			</p>
 		</div>
@@ -254,53 +328,15 @@
 			</p>
 			<p class="feedback-form-wrap">
 				<label class="visually-hidden" for="feedback-name">Текст вашего обращения</label>
-<textarea class="feedback-form-textarea" id="feedback-text" rows="5" >Напишите что-нибудь...</textarea>
+				<textarea class="feedback-form-textarea" id="feedback-text" rows="5" placeholder="Напишите что-нибудь..."></textarea>
 			</p>
 			<button class="button feedback-button" type="submit">
 				Отправить
 			</button>
 		</form>
 	</section>
-	<section class="modal modal-login">
-		<h2 class="visually-hidden">Личный кабинет</h2>
-		<form class="login-form" action="index.html" method="post">
-			<p class="login-form-wrap">
-				<label class="visually-hidden" for="user-login">Логин</label>
-				<input class="login-form-input" id="user-login" type="text" placeholder="Электронная почта">
-			</p>
-			<p class="login-form-wrap">
-				<label class="visually-hidden" for="user-password">Пароль</label>
-				<input class="login-form-input" id="user-password" type="password" placeholder="Пароль">
-			</p>
-			<div class="login-elements-wrap">
-				<button class="button login-button" type="submit">
-					Войти
-				</button>
-				<div class="login-restores-wrap">
-					<a class="restore" href="#">Забыли пароль?</a>
-					<a class="restore" href="#">новая регистрация</a>
-				</div>
-			</div>
-			<button class="visually-hidden" type="button">
-				Закрыть
-			</button>
-		</form>
-	</section>
-	<section class="modal modal-search">
-		<h2 class="visually-hidden">Поиск по сайту</h2>
-		<form class="search-form" action="#.html" method="post">
-			<p class="search-form-wrap">
-				<label class="visually-hidden" for="search">Искать на сайте</label>
-				<input class="search-form-input" id="search" type="text" value="" placeholder="Что ищем?">
-			</p>
-			<button class="visually-hidden" type="submit">
-				Искать
-			</button>
-			<button class="visually-hidden" type="button">
-				Закрыть
-			</button>
-		</form>
-	</section>
+
+
 	<section class="modal modal-basket">
 		<h2 class="visually-hidden">Товары в корзине</h2>
 		<form class="basket-form" action="index.html" method="post">
@@ -343,6 +379,7 @@
 			</button>
 		</form>
 	</section>
+	<script src="js/external.js"></script>
 </body>
 
 </html>
