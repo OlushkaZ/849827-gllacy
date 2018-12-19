@@ -90,8 +90,57 @@
 					</div>
 				</section>
 			</div>
-			<a class="header-addition-link header-cart-full" href="#" aria-label="корзина">
-				<span>2 товара</span></a>
+			<div class="header-cart-full-wrap">
+				<a class="header-addition-link header-cart-full" href="#" aria-label="корзина">
+					<span>2 товара</span></a>
+				<section class="modal modal-basket">
+					<div class="modal-basket-wrap">
+						<h2 class="visually-hidden">Товары в корзине</h2>
+						<form class="basket-form" action="index.html" method="post">
+							<table class="basket-table">
+								<tr class="basker-table-row">
+									<td class="basket-item-delete">
+										<button class="basket-item-delete-button" type="button">
+											удалить товар
+										</button>
+									</td>
+									<td class="basket-item-image"><img class="basket-item-img" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+									<td class="basket-item-name">Пломбир с апельсиновым джемом</td>
+									<td class="basket-item-count">1,5 кг</td>
+									<td class="basket-item-multiply">x</td>
+									<td class="basket-item-price">200 руб.</td>
+									<td class="basket-item-cost">300 руб.</td>
+								</tr>
+								<tr class="basker-table-row">
+									<td class="basket-item-delete">
+										<button class="basket-item-delete-button" type="button">
+											удалить товар
+										</button>
+									</td>
+									<td class="basket-item-image"><img class="basket-item-img" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+									<td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td class="basket-item-count">1,5 кг</td>
+									<td class="basket-item-multiply">x</td>
+									<td class="basket-item-price">300 руб.</td>
+									<td class="basket-item-cost">450 руб.</td>
+								</tr>
+							</table>
+							<svg class="modal-basket-line" width="510" height="1">
+								<line x1="0" y1="0" x2="510" y2="0" stroke="#cacac7" stroke-width="2" />
+							</svg>
+							<p class="modal-basket-sum"><b class="modal-basket-sum">
+									Итого: 750 руб.
+								</b></p>
+							<button class="button modal-basket-button" type="submit">
+								Оформить заказ
+							</button>
+							<button class="visually-hidden" type="button">
+								Закрыть
+							</button>
+						</form>
+					</div>
+				</section>
+			</div>
 			<div class="header-addition-contacts">
 				<p class="header-work-time">С 10 до 20, ежедневно</p>
 				<b class="header-phone-number">8 812 450-25-25</b>
@@ -329,48 +378,6 @@
 			</p>
 		</div>
 	</footer>
-	<section class="modal modal-basket">
-		<h2 class="visually-hidden">Товары в корзине</h2>
-		<form class="basket-form" action="index.html" method="post">
-			<table class="basket-table">
-				<tr>
-					<td>
-						<button class="button basket-item-delete" type="button">
-							удалить товар
-						</button>
-					</td>
-					<td class="basket-item-image"></td>
-					<td class="basket-item-name">Пломбир с апельсиновым джемом</td>
-					<td class="basket-item-count">1,5 кг</td>
-					<td class="basket-item-multiply">x</td>
-					<td class="basket-item-price">200 руб.</td>
-					<td class="basket-item-cost">300 руб.</td>
-				</tr>
-				<tr>
-					<td>
-						<button class="button basket-item-delete" type="button">
-							удалить товар
-						</button>
-					</td>
-					<td class="basket-item-image"></td>
-					<td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-					<td class="basket-item-count">1,5 кг</td>
-					<td class="basket-item-multiply">x</td>
-					<td class="basket-item-price">300 руб.</td>
-					<td class="basket-item-cost">450 руб.</td>
-				</tr>
-			</table>
-			<b>
-				Итого: 750 руб.
-			</b>
-			<button class="button" type="submit">
-				Оформить заказ
-			</button>
-			<button class="visually-hidden" type="button">
-				Закрыть
-			</button>
-		</form>
-	</section>
 	<script src="js/external.js"></script>
 </body>
 
