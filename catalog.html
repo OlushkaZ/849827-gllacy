@@ -6,7 +6,7 @@
 	<title>HTML Academy: Глейси</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -156,7 +156,83 @@
 		<h1 class="page-title">Сливочное мороженое</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="#">
+				<div class="filter-line-wrap">
+					<fieldset class="filter-block">
+						<legend class="filter-block-name">Сортировка:</legend>
+						<label class="filter-block-range-wrap">
+							<select class="filter-block-list filter-block-range">
+								<option class="filter-range-item" value="byPopularity">по популярности</option>
+								<option class="filter-range-item" value="byPriceUp">сначала недорогие</option>
+								<option class="filter-range-item" value="byPriceDown">сначала дорогие</option>
+								<option class="filter-range-item" value="byFat">по жирности</option>
+							</select>
+							<svg class="filter-range-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+								<path class="filter-range-icon-color" d="M5.5 10L0 0h11" /></svg>
+						</label>
+					</fieldset>
+					<fieldset class="filter-block">
+						<legend class="filter-block-name">Цена: 100 руб. – 500 руб.</legend>
+						<div class="filter-block-list filter-block-price">
+							<svg class="filter-price-line" width="176" height="25">
+								<line x1="0" y1="12" x2="200" y2="12" stroke="#ccd5ce" stroke-width="4" />
+								<line x1="30" y1="12" x2="120" y2="12" stroke="#f8f7f4" stroke-width="4" />
+							</svg>
+							<div class="filter-price filter-price-min"></div>
+							<div class="filter-price filter-price-max"></div>
+						</div>
+					</fieldset>
+					<fieldset class="filter-block">
+						<legend class="filter-block-name">Жирность:</legend>
+						<ul class="filter-block-list filter-fat-content-list">
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-radio-fat-content" value="fat0" id="filter-fat0">
+								<label class="filter-option-text filter-radio-text" for="filter-fat0">0%</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-radio-fat-content" value="fat10" id="filter-fat10" checked>
+								<label class="filter-option-text filter-radio-text" for="filter-fat10">до 10%</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-radio-fat-content" value="fatmax30" id="filter-fatmax30">
+								<label class="filter-option-text filter-radio-text" for="filter-fatmax30">до 30%</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-radio-fat-content" value="fatmin30" id="filter-fatmin30">
+								<label class="filter-option-text filter-radio-text" for="filter-fatmin30">выше 30%</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
+				<div class="filter-line-wrap">
+					<fieldset class="filter-block">
+						<legend class="filter-block-name">Наполнители:</legend>
+						<ul class="filter-block-list filter-filler-list">
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-chocolate" checked>
+								<label class="filter-option-text filter-checkbox-text" for="filter-chocolate">шоколадные</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-sugar-powder" checked>
+								<label class="filter-option-text filter-checkbox-text" for="filter-sugar-powder">сахарные присыпки</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-fruits">
+								<label class="filter-option-text filter-checkbox-text" for="filter-fruits">фрукты</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-syrups">
+								<label class="filter-option-text filter-checkbox-text" for="filter-syrups">сиропы</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-jams">
+								<label class="filter-option-text filter-checkbox-text" for="filter-jams">джемы</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="filter-button">Применить</button>
+				</div>
+			</form>
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Ассортимент сливочного мороженого</h2>
@@ -381,4 +457,4 @@
 	<script src="js/external.min.js"></script>
 </body>
 
-</html>
+</html>S

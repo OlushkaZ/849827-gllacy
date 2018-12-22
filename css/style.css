@@ -823,6 +823,232 @@ li:last-child .site-navigation-link-level2 {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+ .filters{
+     margin-bottom: 39px;
+ }
+.filter-line-wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.filter-block {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter-block-name {
+  margin-bottom: 6px;
+  margin-left: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filter-block-list {
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #a9bab0;
+}
+
+.filter-block-range-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-block-range {
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 37px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  user-select: none;
+  opacity: 0.8;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.filter-block-range:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filter-range-icon-color {
+  fill: #ffffff;
+  opacity: 0.8;
+}
+
+.filter-block-range-wrap:hover .filter-range-icon-color {
+  fill: #323232;
+}
+
+.filter-range-item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.filter-range-icon {
+  position: absolute;
+  top: -23px;
+  left: 168px;
+}
+
+.filter-range-icon-color {}
+
+.filter-block-price {
+  padding: 6px 21px;
+  padding-top: 7px;
+  position: relative;
+}
+
+.filter-price {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  border: 8px solid #f8f7f4;
+  border-radius: 50%;
+  background-color: #a9bab0;
+}
+
+.filter-price-min {
+  left: 34px;
+}
+
+.filter-price-max {
+  left: 133px;
+}
+
+.filter-price:hover {
+  width: 22px;
+  height: 22px;
+  border: 9px solid #f8f7f4;
+  cursor: pointer;
+}
+
+.filter-filler-list {
+  padding-left: 15px;
+}
+
+.filter-fat-content-list {
+  padding-left: 16px;
+}
+
+.filter-option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter-checkbox-text {
+  padding-right: 22px;
+}
+
+.filter-radio-text {
+  padding-right: 18px;
+}
+
+.filter-option-text {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.8;
+}
+
+.filter-option-text:hover,
+.filter-option-text:focus {
+  opacity: 1;
+}
+
+.filter-input-checkbox+.filter-option-text::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -33px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+.filter-option-text::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input-radio+.filter-option-text::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked+.filter-option-text::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -26px;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.filter-input:disabled+label,
+.filter-input:checked:disabled+label,
+.filter-input:disabled:hover+label,
+.filter-input:disabled:focus+label {
+  color: #ffffff;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.filter-button {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #a9bab0;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 27px;
+  padding-right: 29px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #323232;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
 
 .breadcrumbs {
   list-style: none;
@@ -861,10 +1087,7 @@ li:last-child .site-navigation-link-level2 {
   line-height: 41px;
   margin: 0;
   padding-top: 1px;
-}
-
-.filters {
-  height: 198px;
+  margin-bottom: 25px;
 }
 
 .pagination-list {
