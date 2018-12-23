@@ -114,6 +114,12 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   border-radius: 15px;
 }
+.site-navigation-link-level1-wrap{
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.site-navigation-link-level1-wrap:hover{
+  border-bottom: none;
+}
 
 .site-navigation-link-level1:hover,
 .site-navigation-link-level1:focus {
@@ -198,6 +204,9 @@ li:last-child .site-navigation-link-level2 {
 
 .site-navigation-current {
   background-color: #d07058;
+}
+.site-navigation-current .site-navigation-link-level1-wrap{
+  border-bottom: none;
 }
 
 .header-addition {
@@ -495,6 +504,7 @@ li:last-child .site-navigation-link-level2 {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  text-align:center;
 }
 
 .populars-list-item::after {
@@ -569,9 +579,15 @@ li:last-child .site-navigation-link-level2 {
 }
 
 .catalog-item-text {
-  display: inline-block;
-  padding: 0 6px;
-  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 0;
+  margin: 0 6px;
+}
+.catalog-item-text:hover,
+.catalog-item-text:active {
+    color:#ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158,0.3);
+
 }
 
 .catalog-item-price,
@@ -1074,12 +1090,15 @@ li:last-child .site-navigation-link-level2 {
 .breadcrumbs-link {
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .breadcrumbs-link:hover,
 .breadcrumbs-link:focus {
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
 .page-title {
@@ -1231,28 +1250,41 @@ li:last-child .site-navigation-link-level2 {
 }
 
 .footer-additional-aboutUs .footer-additional-link {
-  padding-left: 23px;
+  margin-left: 23px;
 }
 
 .footer-additional-link {
-  display: block;
+  display: inline-block;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
   color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.footer-additional-link:hover {
+color:#ffbc9e;
+border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
 .footer-additional-link:first-child {
   padding-top: 16px;
+  position: relative;
 }
 
 .footer-additional-link:not(:first-child) {
   padding-top: 4px;
 }
 
-.footer-additional-aboutUs .footer-additional-link:first-child {
+.footer-additional-aboutUs .footer-additional-link:first-child::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  background-position: 1px 18px;
+  background-position: 0 0;
 }
 
 .footer-copyright {
@@ -1278,6 +1310,12 @@ li:last-child .site-navigation-link-level2 {
   font-size: 12px;
   line-height: 16px;
   color: #fefefe;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.footer-copyright-madeIn-link:hover {
+color:#ffbc9e;
+border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
 @keyframes disappearance {
