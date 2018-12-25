@@ -525,7 +525,7 @@ li:last-child .site-navigation-link-level2 {
   top: -7px;
   left: -13px;
   width: 293px;
-  height: calc(100% + 90px);
+  height: calc(100% + 132px);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -536,7 +536,7 @@ li:last-child .site-navigation-link-level2 {
   top: -7px;
   left: -13px;
   width: 293px;
-  height: calc(100% + 90px);
+  height: calc(100% + 132px);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -559,25 +559,25 @@ li:last-child .site-navigation-link-level2 {
   left: 50%;
   transform: translateX(-50%);
   min-width: 200px;
-  bottom: -60px;
+  bottom: -104px;
   padding-left: 15px;
   padding-right: 15px;
-  z-index: 3;
 }
 
 .catalog-item {
   width: 267px;
   position: relative;
-  margin-bottom: 47px;
+  margin-bottom: 90px;
 }
 
 .catalog-item-name {
   text-align: center;
-  z-index: 0;
   color: #ffffff;
   text-decoration: none;
 }
-
+.catalog-item-text-wrap{
+    position: absolute;
+}
 .catalog-item-text {
   border-bottom: 1px solid rgba(255,255,255,0.3);
   padding: 0;
@@ -601,7 +601,6 @@ li:last-child .site-navigation-link-level2 {
   line-height: 45px;
   position: absolute;
   top: 208px;
-  z-index: 1;
 }
 
 .populars-list-price {
