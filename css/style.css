@@ -478,7 +478,7 @@ li:last-child .site-navigation-link-level2 {
 }
 
 .promo {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .promo-list {
@@ -487,6 +487,7 @@ li:last-child .site-navigation-link-level2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -504,6 +505,8 @@ li:last-child .site-navigation-link-level2 {
   background-repeat: no-repeat;
   padding: 16px 19px;
   position: relative;
+  padding-bottom: 75px;
+  margin-bottom: 20px;
 }
 
 .promo-list-head {
@@ -521,6 +524,8 @@ li:last-child .site-navigation-link-level2 {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  height: 86px;
+  overflow: hidden;
 }
 
 .promo-item:first-child {
@@ -550,7 +555,7 @@ li:last-child .site-navigation-link-level2 {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start ;
   list-style: none;
   text-align: center;
 }
@@ -619,6 +624,11 @@ li:last-child .site-navigation-link-level2 {
   width: 267px;
   position: relative;
   margin-bottom: 90px;
+  margin-right: 26px;
+}
+
+.catalog-item:nth-child(4n){
+    margin-right: 0px;
 }
 
 .catalog-item-name {
@@ -772,7 +782,7 @@ li:last-child .site-navigation-link-level2 {
   background-color: #ffffff;
   background-image: url("../img/strawberry-back.jpg");
   background-position: 0 0;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .blog-news-title,
@@ -819,8 +829,9 @@ li:last-child .site-navigation-link-level2 {
 .subscription-text {
   margin: 0;
   padding: 0;
+  padding-bottom: 16px;
   color: #5a5a5a;
-  min-height: 101px;
+  min-height: 85px;
 }
 
 .subscription-form-wrap {
@@ -1092,11 +1103,12 @@ li:last-child .site-navigation-link-level2 {
   position: absolute;
   top: 0px;
   left: -33px;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
 }
 
 .filter-input-checkbox:checked+.filter-option-text::before {
