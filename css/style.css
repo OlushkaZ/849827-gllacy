@@ -528,12 +528,12 @@ li:last-child .site-navigation-link-level2 {
   overflow: hidden;
 }
 
-.promo-item:first-child {
+.promo-item-malinka {
   background-color: #93163e;
   background-image: url("../img/raspberry.jpg");
 }
 
-.promo-item:last-child {
+.promo-item-chocolate {
   background-color: #2e1002;
   background-image: url("../img/chocolate.jpg");
 }
